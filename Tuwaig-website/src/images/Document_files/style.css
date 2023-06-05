@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+.grid-container { 
+
+display: grid;
+
+height: 100vh;
+
+
+border: 1px solid rgb(0, 0, 0);
+background-image:url(./images/Screenshot\ 2023-05-28\ at\ 6.36.31\ PM.png) ;
+background-size: 95%;
+object-fit: cover;
+grid-template-columns: repeat(3,1fr);
+grid-template-rows: repeat(5,1fr);
+
+}
+
+.grid-item.header{
+display: grid;
+
+grid-column: 1/-1
+;
+grid-row: 1/1;
+
+
+
+
+    
+
+}
+
+.main{
+    display: grid;
+grid-row: 2/5;
+grid-column: 1/-1;
+    justify-content: center;
+    align-items: center;
+   
+}
+.footer{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 5/5;
+
+}
+
+.grid-item { 
+
+    border: 1px solid black;
+    
+  
+}
+.navbar { 
+    display: flex;
+    width: 100%;
+    height: 60%;
+justify-content: flex-end;
+
+    
+    
+}
+
+a { 
+margin: 15px;
+}
+
+
+.btn2 { 
+    display: flex;
+   justify-self: flex-end;
+
+}
+.btn3{
+  
+   
+    justify-self: flex-end;
+}
+.img {
+    display: flex;
+    justify-self: flex-start;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+}
+a{
+    color: white;
+    font-family: 'Cairo', sans-serif;
+line-height: 3;
+    text-decoration: none;
+  
+}
+a:hover{
+    color: rgb(0, 0, 0);
+    
+    transition: 0.1s;
+}
+
+
+h1 {
+  
+
+    font-size: 80px;
+    font-family: 'Cairo', sans-serif;
+    
+    width: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: -5px;
+    color: white;
+    animation: typing 4s, cursor 0.4s infinite alternate;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-iteration-count: infinite;
+  }
+h2{
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    margin-bottom: 30vh;
+}
+  .grid-item.footer {
+    background-image: url(./images/Screenshot\ 2023-05-28\ at\ 9.31.35\ PM.png);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+  @keyframes animate {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  @media (max-width: 500px) {
+
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 20px;
+    }
+  }
